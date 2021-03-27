@@ -101,7 +101,7 @@ function Register({ history }) {
     setInput({
       ...inputs,
       [name]: value,
-      usableId: usableId,
+      usableId: false,
     });
 
     if (inputs.userId.length > 8) {
@@ -182,15 +182,15 @@ function Register({ history }) {
       return;
     } else {
       dispatch(registerUser(body))
-      .then((response) => {
-        if (response.payload.success) {
-          alert("회원가입을 완료했습니다.");
-          history.push("./");
-        } else {
-          alert("회원가입에 실패했습니다.");
-        }
-      })
-      .catch((error) => console.log(error));
+        .then((response) => {
+          if (response.payload.success) {
+            alert("회원가입을 완료했습니다.");
+            history.push("./");
+          } else {
+            alert("회원가입에 실패했습니다.");
+          }
+        })
+        .catch((error) => console.log(error));
     }
   };
   return (
