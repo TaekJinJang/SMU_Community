@@ -49,8 +49,8 @@ const PaginationBox = styled.div`
 function BoardView({ history, match }) {
   const userFrom = localStorage.getItem("userId");
   const writerFrom = localStorage.getItem("userNickname");
-  const [totalPage, settotalPage] = useState(0);
-  const [currentPage, setcurrentPage] = useState(1);
+  const [totalPage, setTotalPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
   const [WriterIcon, setWriterIcon] = useState(true);
   const [BoardWriter, setBoardWriter] = useState("익명");
   const [Content, setContent] = useState([]);
@@ -62,20 +62,18 @@ function BoardView({ history, match }) {
 
   useEffect(() => {
     FetchBoard();
-    console.log('fetch')
+    console.log("fetch");
   }, [currentPage]);
 
   const FetchBoard = () => {
-    axios
-      .post("/board/getBoard", { page: currentPage })
-      .then((response) => {
-        if (response.data.success) {
-          setContent(response.data.boards);
-          settotalPage(Math.ceil(response.data.count/5));
-        } else {
-          alert("게시글을 보여줄 수 없습니다.");
-        }
-      });
+    axios.post("/board/getBoard", { page: currentPage }).then((response) => {
+      if (response.data.success) {
+        setContent(response.data.boards);
+        setTotalPage(Math.ceil(response.data.count / 5));
+      } else {
+        alert("게시글을 보여줄 수 없습니다.");
+      }
+    });
   };
 
   const onRemove = (id) => {
@@ -134,7 +132,7 @@ function BoardView({ history, match }) {
 
   const handlePageChange = (e) => {
     const currentPage = parseInt(e.target.textContent);
-    setcurrentPage(currentPage);
+    setCurrentPage(currentPage);
   };
   return (
     <>
