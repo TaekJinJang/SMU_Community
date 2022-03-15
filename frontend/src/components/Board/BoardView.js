@@ -11,6 +11,7 @@ import UserProfile from "./Section/UserProfile";
 import LogoutButton from "../Common/LogoutButton";
 import Header from "../Common/Header";
 import Footer from "../Common/Footer";
+import { Container } from "react-bootstrap";
 import Pagination from "@material-ui/lab/Pagination";
 
 const Profilebox = styled.div`
@@ -58,6 +59,7 @@ function BoardView({ history, match }) {
     boardTitle: "",
     boardContent: "",
   });
+
   const { boardTitle, boardContent } = inputs;
 
   useEffect(() => {
@@ -135,7 +137,7 @@ function BoardView({ history, match }) {
     setCurrentPage(currentPage);
   };
   return (
-    <>
+    <Container>
       <Header title="자유게시판" link="/board" />
       <StyledBox backColor="#fafafa" padding="10px 0px" lineHeight="auto">
         <Profilebox>
@@ -196,7 +198,7 @@ function BoardView({ history, match }) {
         </PaginationBox>
         <Footer />
       </StyledBox>
-    </>
+    </Container>
   );
 }
 

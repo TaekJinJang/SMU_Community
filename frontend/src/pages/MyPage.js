@@ -8,10 +8,10 @@ import MyBoardList from "../components/MyPage/Section/MyBoardList";
 import Comment from "../components/MyPage/Section/Comment";
 import Favorite from "../components/MyPage/Section/Favorite";
 import WithDrawal from "../components/MyPage/Section/WithDrawal";
-
+import { Container } from "react-bootstrap";
 function MyPage({ match }) {
   return (
-    <>
+    <Container>
       <Route exact path={match.path} component={PageList} />
       <Route path={`${match.path}/nickname`} component={Nickname} />
       <Route path={`${match.path}/email`} component={Email} />
@@ -20,7 +20,7 @@ function MyPage({ match }) {
       <Route path={`${match.path}/comment`} component={Comment} />
       <Route path={`${match.path}/favorite`} component={Favorite} />
       <Route path={`${match.path}/withdrawal`} component={WithDrawal} />
-    </>
+    </Container>
   );
 }
 

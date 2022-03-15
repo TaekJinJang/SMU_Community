@@ -10,7 +10,7 @@ import BoardExample from "./components/Board/BoardViews";
 
 const Container = styled.div`
   margin: 10px auto;
-  width: 370px;
+  // width: 370px;
 `;
 
 function App() {
