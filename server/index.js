@@ -7,7 +7,7 @@ const registerRouter = require("./routes/register");
 const loginRouter = require("./routes/login");
 const logoutRouter = require("./routes/logout");
 const boardRouter = require("./routes/board");
-const anonymousBoardRouter = require("./routes/anonymous");
+
 const commentRouter = require("./routes/comment");
 const likeRouter = require("./routes/like");
 const userRouter = require("./routes/user");
@@ -32,7 +32,7 @@ app.use("/register", registerRouter);
 app.use("/login", loginRouter);
 app.use("/logout", logoutRouter);
 app.use("/board", boardRouter);
-app.use("/anonymous", anonymousBoardRouter);
+
 app.use("/comment", commentRouter);
 app.use("/like", likeRouter);
 app.use("/user", userRouter);

@@ -22,11 +22,8 @@ function App() {
           <Route path="/board-" component={BoardExample} />
           <Route path="/register" component={Auth(Register, false)} />
           <Route path="/free" component={Auth(AnonymousBoard, true)} />
-          <Route path="/anonymous" component={Auth(AnonymousBoard, true)} />
-          <Route
-            path="/anonymous/:boardId"
-            component={Auth(BoardDetail, true)}
-          />
+          <Route path="/board" component={Auth(AnonymousBoard, true)} />
+          <Route path="/board/:boardId" component={Auth(BoardDetail, true)} />
           <Route path="/mypage" component={Auth(MyPage, true)} />
         </Switch>
       </Router>
