@@ -53,7 +53,7 @@ function BoardView({ history, match }) {
   const [totalPage, setTotalPage] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [WriterIcon, setWriterIcon] = useState(true);
-  const [BoardWriter, setBoardWriter] = useState("익명");
+  const [BoardWriter, setBoardWriter] = useState(writerFrom);
   const [Content, setContent] = useState([]);
   const [inputs, setInput] = useState({
     boardTitle: "",
@@ -97,7 +97,7 @@ function BoardView({ history, match }) {
       setBoardWriter(writerFrom);
     } else {
       setWriterIcon(true);
-      setBoardWriter("익명");
+      setBoardWriter(writerFrom);
     }
   };
 
@@ -138,7 +138,7 @@ function BoardView({ history, match }) {
   };
   return (
     <Container>
-      <Header title="익명게시판" link="/anonymous" />
+      <Header title="자유게시판" link="/board" />
       <StyledBox backColor="#fafafa" padding="10px 0px" lineHeight="auto">
         <Profilebox>
           <UserProfile boardPage={true} />

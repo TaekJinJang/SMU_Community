@@ -83,7 +83,7 @@ function Login({ history }) {
           <Logo src={logo} alt="logo" />
           <LogoTitle>
             지금
-            <strong> 에브리타임</strong>을 시작하세요!
+            <strong> SM UCC</strong>을 시작하세요!
           </LogoTitle>
         </FlexBox>
         <form onSubmit={onSubmit}>

@@ -3,8 +3,10 @@ import { Link, withRouter } from "react-router-dom";
 import axios from "axios";
 import styled from "styled-components";
 import logo from "../../assets/logo.png";
+import Image1 from "../../assets/mainImage1.png";
 import Footer from "../Common/Footer";
 import Header from "../Common/Header";
+import MainBoard from "./BoardDetail";
 import {
   Nav,
   Navbar,
@@ -13,7 +15,9 @@ import {
   Form,
   Button,
   FormControl,
+  Carousel,
 } from "react-bootstrap";
+import BoardView from "./BoardView";
 
 const HeaderTitle = styled.span`
   color: #454545;
@@ -64,7 +68,7 @@ function BoardViews(props) {
                 <NavDropdown.Item href="#action3">자유게시판</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">ㅁㅁ게시판</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">익명게시판</NavDropdown.Item>
+                <NavDropdown.Item href="/board">익명게시판</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">
@@ -79,6 +83,54 @@ function BoardViews(props) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      <Carousel fade>
+        <Carousel.Item>
+          <img
+            className="d-flex"
+            src={Image1}
+            width="100%"
+            height="700rem"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Image1}
+            width="100%"
+            height="700rem"
+            alt="Second slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Image1}
+            width="100%"
+            height="700rem"
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+
+      <div style={{ height: "300rem" }}>{MainBoard}</div>
     </Container>
   );
 }
