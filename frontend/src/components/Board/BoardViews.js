@@ -51,8 +51,10 @@ function BoardViews(props) {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link className="px-2" href="#action1">
-                ddd
+              <Nav.Link className="px-2">
+                <a target="_blank" href="www.naver.com" className="px-2">
+                  공지사항
+                </a>
               </Nav.Link>
               <Nav.Link className="px-2" href="#action2">
                 Link
@@ -65,10 +67,14 @@ function BoardViews(props) {
                 id="navbarScrollingDropdown"
                 className="px-2"
               >
-                <NavDropdown.Item href="#action3">자유게시판</NavDropdown.Item>
+                <NavDropdown.Item href="/freeBoard">
+                  자유게시판
+                </NavDropdown.Item>
                 <NavDropdown.Item href="#action4">ㅁㅁ게시판</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/board">익명게시판</NavDropdown.Item>
+                <NavDropdown.Item href="/anonymous">
+                  익명게시판
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">
@@ -129,8 +135,6 @@ function BoardViews(props) {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-
-      <div style={{ height: "300rem" }}>{MainBoard}</div>
     </Container>
   );
 }

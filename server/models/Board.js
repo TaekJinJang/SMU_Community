@@ -18,6 +18,9 @@ const boardSchema = mongoose.Schema(
     boardWriter: {
       type: String,
     },
+    /* boardNum: {
+      type: Number,
+    },*/
   },
   { timestamps: true }
 );
