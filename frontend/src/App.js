@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/" component={Auth(Login, false)}></Route>
           <Route path="/board-" component={BoardExample} />
           <Route path="/register" component={Auth(Register, false)} />
-          <Route path="/free" component={Auth(AnonymousBoard, true)} />
+
           <Route path="/board" component={Auth(AnonymousBoard, true)} />
           <Route path="/board/:boardId" component={Auth(BoardDetail, true)} />
           <Route path="/mypage" component={Auth(MyPage, true)} />
