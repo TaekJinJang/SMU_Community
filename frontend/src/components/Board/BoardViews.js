@@ -7,6 +7,8 @@ import Image1 from "../../assets/mainImage1.png";
 import Footer from "../Common/Footer";
 import Header from "../Common/Header";
 import MainBoard from "./BoardDetail";
+import LogoutButton from "../Common/LogoutButton";
+
 import {
   Nav,
   Navbar,
@@ -34,7 +36,18 @@ const Logo = styled.img`
   cursor: pointer;
 `;
 
-function BoardViews(props) {
+function BoardViews(props, { history }) {
+  const [login, setLogin] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("login") === null) {
+      setLogin(false);
+    } else {
+      setLogin(true);
+      console.log(login);
+    }
+  }, []);
+  console.log(login);
   return (
     <Container>
       <Navbar bg="white" expand="lg">
@@ -78,13 +91,30 @@ function BoardViews(props) {
               </NavDropdown>
             </Nav>
             <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
+              {login ? (
+                <Button variant="outline-danger">
+                  <LogoutButton />
+                </Button>
+              ) : (
+                <>
+                  <Button
+                    variant="outline-primary mx-3"
+                    onClick={() => {
+                      props.history.push("./board");
+                    }}
+                  >
+                    로그인
+                  </Button>
+                  <Button
+                    variant="outline-success"
+                    onClick={() => {
+                      props.history.push("/register");
+                    }}
+                  >
+                    회원가입
+                  </Button>{" "}
+                </>
+              )}
             </Form>
           </Navbar.Collapse>
         </Container>

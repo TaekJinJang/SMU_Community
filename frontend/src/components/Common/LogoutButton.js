@@ -8,6 +8,7 @@ function LogoutButton(props) {
   const handleLogout = () => {
     dispatch(logoutUser()).then((response) => {
       if (response.payload.logoutSuccess) {
+        window.localStorage.removeItem("login");
         window.localStorage.removeItem("userId");
         props.history.push("/");
       } else {
@@ -18,7 +19,12 @@ function LogoutButton(props) {
 
   return (
     <>
-      <button onClick={handleLogout} style={{color:'inherit', fontSize:'inherit'}}>로그아웃</button>
+      <button
+        onClick={handleLogout}
+        style={{ color: "inherit", fontSize: "inherit" }}
+      >
+        로그아웃
+      </button>
     </>
   );
 }

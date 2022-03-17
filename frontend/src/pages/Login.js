@@ -67,8 +67,9 @@ function Login({ history }) {
     } else {
       dispatch(loginUser(body)).then((response) => {
         if (response.payload.loginSuccess) {
+          window.localStorage.setItem("login", true);
           window.localStorage.setItem("userId", response.payload.userId);
-          history.push("/board");
+          history.push("/board-");
         } else {
           alert(response.payload.message);
         }
