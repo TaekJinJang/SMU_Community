@@ -106,7 +106,7 @@ function Login({ history }) {
         </form>
         <StyledDiv>
           <Link to="./register">
-            <StyledSpan>에브리타임에 처음이신가요?</StyledSpan>회원가입
+            <StyledSpan>SM UCC에 처음이신가요?</StyledSpan>회원가입
           </Link>
         </StyledDiv>
       </div>

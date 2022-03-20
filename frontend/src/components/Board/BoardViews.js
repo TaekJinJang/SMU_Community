@@ -70,11 +70,12 @@ function BoardViews(props, { history }) {
                 </a>
               </Nav.Link>
               <Nav.Link className="px-2" href="#action2">
-                Link
+                건의사항
               </Nav.Link>
-              <Nav.Link className="px-2" href="#" disabled>
-                Link
+              <Nav.Link className="px-2" href="#action2">
+                학부 이모저모
               </Nav.Link>
+
               <NavDropdown
                 title="게시판"
                 id="navbarScrollingDropdown"
@@ -130,8 +131,8 @@ function BoardViews(props, { history }) {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>세명대학교</h3>
+            <p>컴퓨터학부만을 위한 커뮤니티입니다.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
