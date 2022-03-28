@@ -23,6 +23,7 @@ function App() {
           <Route path="/register" component={Auth(Register, false)} />
 
           <Route path="/board" component={Auth(AnonymousBoard, true)} />
+          <Route path="/freeboard" component={Auth(AnonymousBoard, true)} />
           <Route path="/board/:boardId" component={Auth(BoardDetail, true)} />
           <Route path="/mypage" component={Auth(MyPage, true)} />
         </Switch>
