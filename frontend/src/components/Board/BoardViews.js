@@ -93,7 +93,13 @@ function BoardViews(props, { history }) {
             </Nav>
             <Form className="d-flex">
               {login ? (
-                <Button variant="outline-danger">
+                <Button
+                  variant="outline-danger"
+                  onClick={() => {
+                    window.localStorage.removeItem("login");
+                    window.localStorage.removeItem("userId");
+                  }}
+                >
                   <LogoutButton />
                 </Button>
               ) : (
