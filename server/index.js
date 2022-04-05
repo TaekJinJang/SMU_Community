@@ -16,6 +16,7 @@ const mongoose = require("mongoose");
 
 const connect = mongoose
   .connect(config.mongoURI, {
+    // db 연결
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -24,7 +25,7 @@ const connect = mongoose
   .then(() => console.log("MongoDB connected..."))
   .catch((err) => console.log(err));
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true })); // bodyParser를 express로 대체가능
 app.use(bodyParser.json());
 app.use(cookieParser());
 
