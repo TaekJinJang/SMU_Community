@@ -139,7 +139,7 @@ function BoardView({ history, match }) {
   };
   return (
     <Container>
-      <Header title="익명게시판" link="/board" />
+      <Header title="자유게시판" link="/board-" />
       <StyledBox backColor="#fafafa" padding="10px 0px" lineHeight="auto">
         <Profilebox>
           <UserProfile boardPage={true} />

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import AnonymousBoard from "./pages/Board";
+import meetingBoard from "./components/Board/MeetingBoardView";
 import BoardDetail from "./components/Board/BoardDetail";
 import MyPage from "./pages/MyPage";
 import Auth from "./hoc/auth";
@@ -23,8 +24,8 @@ function App() {
           <Route path="/register" component={Auth(Register, false)} />
 
           <Route path="/board" component={Auth(AnonymousBoard, true)} />
-          <Route path="/freeboard" component={Auth(AnonymousBoard, true)} />
           <Route path="/board/:boardId" component={Auth(BoardDetail, true)} />
+          <Route path="/meetingBoard" component={Auth(meetingBoard, true)} />
           <Route path="/mypage" component={Auth(MyPage, true)} />
         </Switch>
       </Router>
