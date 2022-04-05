@@ -6,6 +6,7 @@ import StyledBox from "../Style/styledBox";
 import AddBoard from "./Section/AddBoard";
 import BoardInput from "./Section/BoardInput";
 import CheckNickname from "./Section/CheckNickname";
+import DefaultNickname from "./Section/DefaultNickname";
 import BoardTextarea from "./Section/BoardTextarea";
 import UserProfile from "./Section/UserProfile";
 import LogoutButton from "../Common/LogoutButton";
@@ -68,7 +69,7 @@ function BoardView({ history, match }) {
   }, [currentPage]);
 
   const FetchBoard = () => {
-    axios.post("/board/getBoard", { page: currentPage }).then((response) => {
+    axios.post("/board/getBoard/2", { page: currentPage }).then((response) => {
       if (response.data.success) {
         setContent(response.data.boards);
         setTotalPage(Math.ceil(response.data.count / 5));
@@ -91,15 +92,15 @@ function BoardView({ history, match }) {
     });
   };
 
-  const onIconClick = () => {
-    if (WriterIcon) {
-      setWriterIcon(false);
-      setBoardWriter(writerFrom);
-    } else {
-      setWriterIcon(true);
-      setBoardWriter(writerFrom);
-    }
-  };
+  // const onIconClick = () => {
+  //   if (WriterIcon) {
+  //     setWriterIcon(false);
+  //     setBoardWriter(writerFrom);
+  //   } else {
+  //     setWriterIcon(true);
+  //     setBoardWriter(writerFrom);
+  //   }
+  // };
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -163,11 +164,7 @@ function BoardView({ history, match }) {
             value={boardContent}
             onChange={onChange}
           />
-          <CheckNickname
-            icon={WriterIcon}
-            click={onIconClick}
-            submit={onSubmit}
-          />
+          <DefaultNickname icon={WriterIcon} submit={onSubmit} />
         </BoardForm>
         {Content &&
           Content.map((board, index) => {

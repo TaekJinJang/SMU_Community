@@ -5,6 +5,7 @@ import Register from "./pages/Register";
 import AnonymousBoard from "./pages/Board";
 import meetingBoard from "./components/Board/MeetingBoardView";
 import BoardDetail from "./components/Board/BoardDetail";
+import BoardDetailNickname from "./components/Board/BoardDetailNickname";
 import MyPage from "./pages/MyPage";
 import Auth from "./hoc/auth";
 import MainPage from "./pages/MainPage";

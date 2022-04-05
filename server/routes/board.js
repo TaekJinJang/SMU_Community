@@ -20,9 +20,29 @@ router.post("/upload", (req, res) => {
   });
 });
 
-router.post("/getBoard", (req, res) => {
+router.post("/getBoard/1", (req, res) => {
+  // 자유게시판 페이지네이션
   const Page = req.body.page;
-  Board.countDocuments({}, (err, count) => {
+  Board.countDocuments({ boardSort: 1 }, (err, count) => {
+    if (err) {
+      return res.status(400).send(err);
+    } else {
+      Board.find()
+        .sort({ createdAt: -1 })
+        .skip((Page - 1) * 5)
+        .limit(5)
+        .populate("userFrom")
+        .exec((err, boards) => {
+          if (err) return res.status(400).send(err);
+          res.status(200).json({ success: true, boards, count });
+        });
+    }
+  });
+});
+router.post("/getBoard/2", (req, res) => {
+  // 구인게시판 페이지네이션
+  const Page = req.body.page;
+  Board.countDocuments({ boardSort: 2 }, (err, count) => {
     if (err) {
       return res.status(400).send(err);
     } else {

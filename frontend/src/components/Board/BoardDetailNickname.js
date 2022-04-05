@@ -7,6 +7,7 @@ import AddBoard from "./Section/AddBoard";
 import AddComment from "./Section/AddComment";
 import CommentInput from "./Section/CommentInput";
 import CheckNickname from "./Section/CheckNickname";
+import DefaultNickname from "./Section/DefaultNickname";
 import menu from "../../assets/menu.png";
 
 const CommentForm = styled.form`
@@ -75,15 +76,6 @@ function BoardDetail(props) {
     });
   };
 
-  const onIconClick = () => {
-    if (WriterIcon) {
-      setWriterIcon(false);
-      setBoardWriter(writerFrom);
-    } else {
-      setWriterIcon(true);
-      setBoardWriter("익명");
-    }
-  };
   const onRemoveBoard = (id) => {
     setBoardDetail(BoardDetail.filter((BoardDetail) => BoardDetail._id !== id));
     props.history.push("/");
@@ -131,12 +123,7 @@ function BoardDetail(props) {
           value={Value}
           onChange={onChange}
         />
-        <CheckNickname
-          left="53rem"
-          icon={WriterIcon}
-          click={onIconClick}
-          submit={onSubmit}
-        />
+        <DefaultNickname icon={WriterIcon} submit={onSubmit} />
       </CommentForm>
       {Comments &&
         Comments.map((comment, index) => {

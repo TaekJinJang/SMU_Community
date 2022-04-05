@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import writeIcon from "../../../assets/write.png";
 import uncheckWriter from "../../../assets/writer.png";
 import checkWriter from "../../../assets/writeractive.png";
@@ -24,22 +24,18 @@ const InputIcon = styled.img`
   height: 38px;
 `;
 
-function CheckNickname({icon, left, click, submit}) {
+function CheckNickname({ icon, left, click, submit }) {
   return (
     <>
       <CheckButton left={left} onClick={click}>
-          {icon &&
-              <InputIcon src={checkWriter} />
-          }
-          {!icon &&
-              <InputIcon src={uncheckWriter} />
-          }
+        {icon && <InputIcon src={checkWriter} />}
+        {!icon && <InputIcon src={uncheckWriter} />}
       </CheckButton>
       <SubmitButton onClick={submit}>
-          <InputIcon src={writeIcon} />
+        <InputIcon src={writeIcon} />
       </SubmitButton>
     </>
-  )
+  );
 }
 
 export default CheckNickname;
