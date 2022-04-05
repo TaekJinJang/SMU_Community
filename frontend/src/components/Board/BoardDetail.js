@@ -105,7 +105,7 @@ function BoardDetail(props) {
   };
 
   return (
-    <div>
+    <div className="container">
       <Header title="익명게시판" link="/anonymous" />
       {BoardDetail &&
         BoardDetail.map((board, index) => {
@@ -132,7 +132,7 @@ function BoardDetail(props) {
           onChange={onChange}
         />
         <CheckNickname
-          left="284px"
+          left="1200px"
           icon={WriterIcon}
           click={onIconClick}
           submit={onSubmit}
@@ -153,7 +153,7 @@ function BoardDetail(props) {
             </React.Fragment>
           );
         })}
-      <Link to="/anonymous">
+      <Link to="/freeboard">
         <BackButton>
           <MenuIcon src={menu} alt="menu" />
           <BackTitle>글 목록</BackTitle>

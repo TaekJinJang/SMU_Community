@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 import axios from "axios";
 import styled from "styled-components";
-import logo from "../../assets/logo.png";
-import Image1 from "../../assets/mainImage1.png";
-import Footer from "../Common/Footer";
-import Header from "../Common/Header";
-import MainBoard from "./BoardDetail";
-import LogoutButton from "../Common/LogoutButton";
+import logo from "../assets/logo.png";
+import Image1 from "../assets/mainImage1.png";
+import Footer from "../components/Common/Footer";
+import Header from "../components/Common/Header";
+import MainBoard from "../components/Board/BoardDetail";
+import LogoutButton from "../components/Common/LogoutButton";
 
 import {
   Nav,
@@ -19,7 +19,7 @@ import {
   FormControl,
   Carousel,
 } from "react-bootstrap";
-import BoardView from "./BoardView";
+import BoardView from "../components/Board/BoardView";
 
 const HeaderTitle = styled.span`
   color: #454545;

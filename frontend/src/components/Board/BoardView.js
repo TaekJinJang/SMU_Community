@@ -118,6 +118,7 @@ function BoardView({ history, match }) {
       boardTitle: boardTitle,
       boardContent: boardContent,
       boardWriter: BoardWriter,
+      boardSort: 1,
     };
     axios.post("/board/upload", variables).then((response) => {
       if (response.status === 200) {
@@ -171,18 +172,20 @@ function BoardView({ history, match }) {
         {Content &&
           Content.map((board, index) => {
             return (
-              <React.Fragment key={index}>
-                <AddBoard
-                  id={board._id}
-                  user={board.userFrom._id}
-                  time={board.createdAt}
-                  writer={board.boardWriter}
-                  title={board.boardTitle}
-                  content={board.boardContent}
-                  history={`${history}`}
-                  onRemove={onRemove}
-                />
-              </React.Fragment>
+              board.boardSort == "1" && ( // 자유게시판 = 1
+                <React.Fragment key={index}>
+                  <AddBoard
+                    id={board._id}
+                    user={board.userFrom._id}
+                    time={board.createdAt}
+                    writer={board.boardWriter}
+                    title={board.boardTitle}
+                    content={board.boardContent}
+                    history={`${history}`}
+                    onRemove={onRemove}
+                  />
+                </React.Fragment>
+              )
             );
           })}
         <PaginationBox>

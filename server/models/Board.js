@@ -18,9 +18,10 @@ const boardSchema = mongoose.Schema(
     boardWriter: {
       type: String,
     },
-    /* boardNum: {
+    boardSort: {
+      // 게시판 분리
       type: Number,
-    },*/
+    },
   },
   { timestamps: true }
 );

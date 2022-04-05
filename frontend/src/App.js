@@ -6,7 +6,7 @@ import AnonymousBoard from "./pages/Board";
 import BoardDetail from "./components/Board/BoardDetail";
 import MyPage from "./pages/MyPage";
 import Auth from "./hoc/auth";
-import BoardExample from "./components/Board/BoardViews";
+import MainPage from "./pages/MainPage";
 
 const Container = styled.div`
   margin: 10px auto;
@@ -19,7 +19,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Auth(Login, false)}></Route>
-          <Route path="/board-" component={BoardExample} />
+          <Route path="/board-" component={MainPage} />
           <Route path="/register" component={Auth(Register, false)} />
 
           <Route path="/board" component={Auth(AnonymousBoard, true)} />
