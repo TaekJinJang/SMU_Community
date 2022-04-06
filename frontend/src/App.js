@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import AnonymousBoard from "./pages/Board";
 import meetingBoard from "./components/Board/MeetingBoardView";
+import projectBoard from "./components/Board/ProjectBoardView";
 import BoardDetail from "./components/Board/BoardDetail";
 import BoardDetailNickname from "./components/Board/BoardDetailNickname";
 import MyPage from "./pages/MyPage";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/board" component={Auth(AnonymousBoard, true)} />
           <Route path="/board/:boardId" component={Auth(BoardDetail, true)} />
           <Route path="/meetingBoard" component={Auth(meetingBoard, true)} />
+          <Route path="/projectBoard" component={Auth(projectBoard, true)} />
           <Route path="/mypage" component={Auth(MyPage, true)} />
         </Switch>
       </Router>

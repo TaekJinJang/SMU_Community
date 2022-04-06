@@ -8,7 +8,8 @@ import Footer from "../components/Common/Footer";
 import Header from "../components/Common/Header";
 import MainBoard from "../components/Board/BoardDetail";
 import LogoutButton from "../components/Common/LogoutButton";
-
+import meetingBoard from "../components/Board/MeetingBoardView";
+import "../components/Board/Mainpage.css";
 import {
   Nav,
   Navbar,
@@ -35,7 +36,12 @@ const Logo = styled.img`
   vertical-align: middle;
   cursor: pointer;
 `;
-
+const BoardCard = styled.span`
+  width : 100px
+  height : 200px
+  font-size : 100px
+  border 1px solid #000
+`;
 function BoardViews(props, { history }) {
   const [login, setLogin] = useState(false);
 
@@ -81,14 +87,15 @@ function BoardViews(props, { history }) {
                 id="navbarScrollingDropdown"
                 className="px-2"
               >
-                <NavDropdown.Item href="/freeBoard">
-                  자유게시판
+                <NavDropdown.Item href="/board">자유게시판</NavDropdown.Item>
+                <NavDropdown.Item href="/meetingBoard">
+                  구인게시판
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action4">ㅁㅁ게시판</NavDropdown.Item>
+                <NavDropdown.Item href="/projectBoard">
+                  자랑게시판
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/anonymous">
-                  익명게시판
-                </NavDropdown.Item>
+                <NavDropdown.Item href="/">고민중</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">
@@ -172,6 +179,41 @@ function BoardViews(props, { history }) {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      {/* 여기부터 시작 */}
+      <div className="row">
+        <div className="card col-7">
+          <div className="card-row">asd{meetingBoard}</div>
+          <div className="card-row">asdasd</div>
+          <div className="card-row">asdasd</div>
+        </div>
+        <span className="poster col-5">
+          <Carousel>
+            <Carousel.Item>
+              <img className="d-block" src={Image1} />
+              <Carousel.Caption>
+                <h3>첫번째</h3>
+                <p>첫번째</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="d-block" src={Image1} alt="Second slide" />
+
+              <Carousel.Caption>
+                <h3>두번째</h3>
+                <p>두번째</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="d-block" src={Image1} alt="Third slide" />
+
+              <Carousel.Caption>
+                <h3>세번째</h3>
+                <p>세번쨰</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </span>
+      </div>
     </Container>
   );
 }
