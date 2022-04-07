@@ -4,11 +4,13 @@ import axios from "axios";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
 import Image1 from "../assets/mainImage1.png";
+import poster1 from "../assets/poster1.jpg";
+import poster3 from "../assets/poster3.jpg";
 import Footer from "../components/Common/Footer";
 import Header from "../components/Common/Header";
 import MainBoard from "../components/Board/BoardDetail";
 import LogoutButton from "../components/Common/LogoutButton";
-import meetingBoard from "../components/Board/MeetingBoardView";
+// import meetingBoard from "../components/Board/MeetingBoardView";
 import "../components/Board/Mainpage.css";
 import {
   Nav,
@@ -180,23 +182,23 @@ function BoardViews(props, { history }) {
         </Carousel.Item>
       </Carousel>
       {/* 여기부터 시작 */}
-      <div className="row">
+      <div className="row mt-3 mb-3">
         <div className="card col-7">
-          <div className="card-row">asd{meetingBoard}</div>
-          <div className="card-row">asdasd</div>
-          <div className="card-row">asdasd</div>
+          <div className="card-row">자유게시판 바로가기</div>
+          <div className="card-row">구인게시판 바로가기</div>
+          <div className="card-row">자랑게시판 바로가기</div>
         </div>
         <span className="poster col-5">
           <Carousel>
             <Carousel.Item>
-              <img className="d-block" src={Image1} />
+              <img className="d-block w-100" src={poster1} />
               <Carousel.Caption>
-                <h3>첫번째</h3>
-                <p>첫번째</p>
+                <h3>ICES Lab</h3>
+                <p></p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block" src={Image1} alt="Second slide" />
+              <img className="d-block w-100" src={Image1} alt="Second slide" />
 
               <Carousel.Caption>
                 <h3>두번째</h3>
@@ -204,11 +206,11 @@ function BoardViews(props, { history }) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block" src={Image1} alt="Third slide" />
+              <img className="d-block w-100" src={poster3} alt="Third slide" />
 
               <Carousel.Caption>
-                <h3>세번째</h3>
-                <p>세번쨰</p>
+                <h3>학생회 모집</h3>
+                <p></p>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
