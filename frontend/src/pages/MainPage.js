@@ -57,7 +57,7 @@ function BoardViews(props, { history }) {
   }, []);
   console.log(login);
   return (
-    <Container>
+    <>
       <Navbar bg="white" expand="lg">
         <Container fluid>
           <Link to={props.link}>
@@ -135,88 +135,99 @@ function BoardViews(props, { history }) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Container>
+        <Carousel fade>
+          <Carousel.Item>
+            <img
+              className="d-flex"
+              src={Image1}
+              width="100%"
+              height="700rem"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>세명대학교</h3>
+              <p>컴퓨터학부만을 위한 커뮤니티입니다.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={Image1}
+              width="100%"
+              height="700rem"
+              alt="Second slide"
+            />
 
-      <Carousel fade>
-        <Carousel.Item>
-          <img
-            className="d-flex"
-            src={Image1}
-            width="100%"
-            height="700rem"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>세명대학교</h3>
-            <p>컴퓨터학부만을 위한 커뮤니티입니다.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={Image1}
-            width="100%"
-            height="700rem"
-            alt="Second slide"
-          />
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={Image1}
+              width="100%"
+              height="700rem"
+              alt="Third slide"
+            />
 
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={Image1}
-            width="100%"
-            height="700rem"
-            alt="Third slide"
-          />
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+        {/* 여기부터 시작 */}
 
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-      {/* 여기부터 시작 */}
-      <div className="row mt-3 mb-3">
-        <div className="card col-7">
-          <div className="card-row">자유게시판 바로가기</div>
-          <div className="card-row">구인게시판 바로가기</div>
-          <div className="card-row">자랑게시판 바로가기</div>
+        <div className="row mt-3 mb-3">
+          <div className="card col-7">
+            <div className="card-row">자유게시판 바로가기</div>
+            <div className="card-row">구인게시판 바로가기</div>
+            <div className="card-row">자랑게시판 바로가기</div>
+          </div>
+          <span className="poster col-5">
+            <Carousel>
+              <Carousel.Item>
+                <img className="d-block w-100" src={poster1} />
+                <Carousel.Caption>
+                  <h3>ICES Lab</h3>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={Image1}
+                  alt="Second slide"
+                />
+
+                <Carousel.Caption>
+                  <h3>두번째</h3>
+                  <p>두번째</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={poster3}
+                  alt="Third slide"
+                />
+
+                <Carousel.Caption>
+                  <h3>학생회 모집</h3>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+          </span>
         </div>
-        <span className="poster col-5">
-          <Carousel>
-            <Carousel.Item>
-              <img className="d-block w-100" src={poster1} />
-              <Carousel.Caption>
-                <h3>ICES Lab</h3>
-                <p></p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="d-block w-100" src={Image1} alt="Second slide" />
-
-              <Carousel.Caption>
-                <h3>두번째</h3>
-                <p>두번째</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="d-block w-100" src={poster3} alt="Third slide" />
-
-              <Carousel.Caption>
-                <h3>학생회 모집</h3>
-                <p></p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
-        </span>
-      </div>
-    </Container>
+      </Container>
+      <footer></footer>
+    </>
   );
 }
 export default withRouter(BoardViews);
