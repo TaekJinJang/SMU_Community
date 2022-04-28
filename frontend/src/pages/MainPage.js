@@ -38,6 +38,7 @@ const Logo = styled.img`
   vertical-align: middle;
   cursor: pointer;
 `;
+//
 const BoardCard = styled.span`
   width : 100px
   height : 200px
@@ -97,7 +98,7 @@ function BoardViews(props, { history }) {
                   자랑게시판
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/">고민중</NavDropdown.Item>
+                <NavDropdown.Item href="/">...</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">
@@ -201,8 +202,8 @@ function BoardViews(props, { history }) {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={Image1}
-                  alt="Second slide"
+                  src={poster3}
+                  alt="Third slide"
                 />
 
                 <Carousel.Caption>
