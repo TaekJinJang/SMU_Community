@@ -45,7 +45,7 @@
   <img width="280" alt="7" src="https://user-images.githubusercontent.com/71811780/108112315-44d5ab80-70d9-11eb-8595-eda8af5d9d76.gif">
 </p>
 
-#### 게시판 & 마이페이지
+#### 게시판 & 마이페이지.
 <p align="center">
   <img width="280" alt="7" src="https://user-images.githubusercontent.com/71811780/108112312-43a47e80-70d9-11eb-8b93-b34216d96f22.gif">
   &nbsp;&nbsp;&nbsp;
