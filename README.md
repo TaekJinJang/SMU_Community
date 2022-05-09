@@ -24,7 +24,7 @@
 1. 아이디 및 비밀번호 글자 수 제한
 2. 아이디 중복 체크
 3. 학교 검색 및 학번 추가 기능
-4. input에 정보가 다 들어왔는지 확인하고 회원가입 승인 
+4. input에 정보가 다 들어왔는지 확인하고 회원가입 승인  
 #### 게시판
 1. user profile에 설정한 닉네임과 학교 표시
 2. 게시판 글 작성 기능(300자 이내)
@@ -32,7 +32,7 @@
 4. 등록된 게시글 좋아요 및 댓글 기능 추가
 5. 게시판 페이지네이션 기능 추가
 #### 마이페이지 
-1. 계정 정보 변경 기능 및 메뉴 추가(nickname, email, password)
+1. 계정 정보 변경 기능 및 메뉴 추가(nickname, email, pass word)
 2. 내가 쓴 게시글 및 좋아요 한 글, 작성한 댓글 모아보기 설정
 3. 내가 쓴 게시글 및 댓글 삭제 기능 추가
 4. 회원탈퇴 기능 추가
@@ -45,7 +45,7 @@
   <img width="280" alt="7" src="https://user-images.githubusercontent.com/71811780/108112315-44d5ab80-70d9-11eb-8595-eda8af5d9d76.gif">
 </p>
 
-#### 게시판 & 마이페이지
+#### 게시판 & 마이페이지.
 <p align="center">
   <img width="280" alt="7" src="https://user-images.githubusercontent.com/71811780/108112312-43a47e80-70d9-11eb-8b93-b34216d96f22.gif">
   &nbsp;&nbsp;&nbsp;
