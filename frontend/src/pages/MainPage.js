@@ -61,85 +61,87 @@ function BoardViews(props, { history }) {
   console.log(login);
   return (
     <>
-      <Navbar bg="white" expand="lg">
-        <Container fluid>
-          <Link to={props.link}>
-            <Logo src={logo} alt="logo" />
-          </Link>
-          <HeaderTitle>SM UCC</HeaderTitle>
-
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="me-auto my-2 my-lg-0 px-5"
-              style={{ maxHeight: "100px" }}
-              navbarScroll
-            >
-              <Nav.Link className="px-2">
-                <a target="_blank" href="www.naver.com" className="px-2">
-                  공지사항
-                </a>
-              </Nav.Link>
-              <Nav.Link className="px-2" href="#action2">
-                건의사항
-              </Nav.Link>
-              <Nav.Link className="px-2" href="#action2">
-                학부 이모저모
-              </Nav.Link>
-
-              <NavDropdown
-                title="게시판"
-                id="navbarScrollingDropdown"
-                className="px-2"
-              >
-                <NavDropdown.Item href="/board">자유게시판</NavDropdown.Item>
-                <NavDropdown.Item href="/meetingBoard">
-                  구인게시판
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/projectBoard">
-                  자랑게시판
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/">...</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-            <Form className="d-flex">
-              {login ? (
-                <Button
-                  variant="outline-danger"
-                  onClick={() => {
-                    window.localStorage.removeItem("login");
-                    window.localStorage.removeItem("userId");
-                  }}
-                >
-                  <LogoutButton />
-                </Button>
-              ) : (
-                <>
-                  <Button
-                    variant="outline-primary mx-3"
-                    onClick={() => {
-                      props.history.push("./board");
-                    }}
-                  >
-                    로그인
-                  </Button>
-                  <Button
-                    variant="outline-success"
-                    onClick={() => {
-                      props.history.push("/register");
-                    }}
-                  >
-                    회원가입
-                  </Button>{" "}
-                </>
-              )}
-            </Form>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      {" "}
       <Container>
-        <Carousel fade>
+        <Navbar bg="white" expand="lg">
+          <Container fluid>
+            <Link to={props.link}>
+              <Logo src={logo} alt="logo" />
+            </Link>
+            <HeaderTitle>SM UCC</HeaderTitle>
+
+            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Collapse id="navbarScroll">
+              <Nav
+                className="me-auto my-2 my-lg-0 px-5"
+                style={{ maxHeight: "100px" }}
+                navbarScroll
+              >
+                <Nav.Link className="px-2">
+                  <a target="_blank" href="www.naver.com" className="px-2">
+                    공지사항
+                  </a>
+                </Nav.Link>
+                <Nav.Link className="px-2" href="#action2">
+                  건의사항
+                </Nav.Link>
+                <Nav.Link className="px-2" href="#action2">
+                  학부 이모저모
+                </Nav.Link>
+
+                <NavDropdown
+                  title="게시판"
+                  id="navbarScrollingDropdown"
+                  className="px-2"
+                >
+                  <NavDropdown.Item href="/board">자유게시판</NavDropdown.Item>
+                  <NavDropdown.Item href="/meetingBoard">
+                    구인게시판
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/projectBoard">
+                    자랑게시판
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/">...</NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+              <Form className="d-flex">
+                {login ? (
+                  <Button
+                    variant="outline-danger"
+                    onClick={() => {
+                      window.localStorage.removeItem("login");
+                      window.localStorage.removeItem("userId");
+                    }}
+                  >
+                    <LogoutButton />
+                  </Button>
+                ) : (
+                  <>
+                    <Button
+                      variant="outline-primary mx-3"
+                      onClick={() => {
+                        props.history.push("./board");
+                      }}
+                    >
+                      로그인
+                    </Button>
+                    <Button
+                      variant="outline-success"
+                      onClick={() => {
+                        props.history.push("/register");
+                      }}
+                    >
+                      회원가입
+                    </Button>{" "}
+                  </>
+                )}
+              </Form>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+
+        <Carousel fade style={{ marginBottom: "100px" }}>
           <Carousel.Item>
             <img
               className="d-flex"
@@ -163,7 +165,9 @@ function BoardViews(props, { history }) {
             />
 
             <Carousel.Caption>
-              <h3>컴퓨터학부에서 당신의 꿈을 코딩하세요</h3>
+              <h3 style={{ color: "rgb(0,0,0)" }}>
+                컴퓨터학부에서 당신의 꿈을 코딩하세요 이미지 바꿔야함
+              </h3>
               <p></p>
             </Carousel.Caption>
           </Carousel.Item>
