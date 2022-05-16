@@ -5,6 +5,7 @@ import styled from "styled-components";
 import logo from "../assets/logo.png";
 import Image1 from "../assets/mainImage1.png";
 import Image2 from "../assets/mainImage2.png";
+import Image3 from "../assets/mainImage3.png";
 import poster1 from "../assets/poster1.jpg";
 import poster3 from "../assets/poster3.jpg";
 import Footer from "../components/Common/Footer";
@@ -162,24 +163,22 @@ function BoardViews(props, { history }) {
             />
 
             <Carousel.Caption>
-              <h3>충북바이오헬스 캡스톤디자인 우수상</h3>
-              <p>세명대학교 ICES팀</p>
+              <h3>컴퓨터학부에서 당신의 꿈을 코딩하세요</h3>
+              <p></p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={Image1}
+              src={Image3}
               width="100%"
               height="700rem"
               alt="Third slide"
             />
 
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+              <h3>충북바이오헬스 캡스톤디자인 우수상</h3>
+              <p>세명대학교 ICES Lab.(지도교수: 인치호 교수)</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -187,17 +186,65 @@ function BoardViews(props, { history }) {
 
         <div className="row mt-3 mb-3">
           <div className="card col-7">
-            <div className="card-row">
-              학번,나이,성별에 상관없이 자유롭게 소통하는 자유게시판에
-              놀러오세요 !
+            <div className="card-row flip-box">
+              {
+                <div className="flip">
+                  <div className="front">
+                    <div className="card-font">
+                      학번,나이,성별에 상관없이
+                      <br />
+                      자유롭게 소통하고 싶다면?
+                    </div>
+                  </div>
+                  <div className="back">
+                    <div className="card-font">
+                      자유게시판
+                      <br />
+                      바로가기
+                    </div>
+                  </div>
+                </div>
+              }
             </div>
-            <div className="card-row">
-              팀 프로젝트를 하면서 코딩실력을 쌓고 싶은데 인원이 부족하다구요?
-              구인게시판으로 오세요 !
+            <div className="card-row flip-box">
+              {
+                <div className="flip">
+                  <div className="front">
+                    <div className="card-font">
+                      팀 프로젝트 하면서 코딩실력을 쌓고 싶은데
+                      <br />
+                      인원이 부족하다구요?
+                    </div>
+                  </div>
+                  <div className="back">
+                    <div className="card-font">
+                      구인게시판
+                      <br />
+                      바로가기
+                    </div>
+                  </div>
+                </div>
+              }
             </div>
-            <div className="card-row">
-              내가 만든 개인/팀 프로젝트를 학부생 친구들에게 공유하고싶다면?
-              자유게시판으로 오세요 !
+            <div className="card-row flip-box">
+              {
+                <div className="flip">
+                  <div className="front">
+                    <div className="card-font">
+                      내가 만든 개인/팀 프로젝트를
+                      <br />
+                      학부생 친구들에게 공유하고싶다면?
+                    </div>
+                  </div>
+                  <div className="back">
+                    <div className="card-font">
+                      자랑게시판
+                      <br />
+                      바로가기
+                    </div>
+                  </div>
+                </div>
+              }
             </div>
           </div>
           <span className="poster col-5">
