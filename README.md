@@ -1,7 +1,7 @@
 # 대학교 컴퓨터학부 커뮤니티
 <br/> 
 <p align="center">
-  <img width="100" alt="7" src="https://user-images.githubusercontent.com/71836751/107924570-83bf1080-6fb6-11eb-927b-9b13b0c2423c.png">
+  <img width="100" alt="7" src="![logo](https://user-images.githubusercontent.com/93184838/168743212-81d9082c-f315-478a-aa3b-bafcfe64b8f7.png)">
 </p>
  
 ## Description
