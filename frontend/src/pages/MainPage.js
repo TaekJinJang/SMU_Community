@@ -165,10 +165,8 @@ function BoardViews(props, { history }) {
             />
 
             <Carousel.Caption>
-              <h3 style={{ color: "rgb(0,0,0)" }}>
-                컴퓨터학부에서 당신의 꿈을 코딩하세요 이미지 바꿔야함
-              </h3>
-              <p></p>
+              <h3>컴퓨터학부에서 당신의 꿈을 코딩하세요.</h3>
+              <p>세명대학교 컴퓨터학부</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
