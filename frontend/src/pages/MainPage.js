@@ -77,17 +77,23 @@ function BoardViews(props, { history }) {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <Nav.Link className="px-2">
-                  <a target="_blank" href="www.naver.com" className="px-2">
-                    공지사항
-                  </a>
-                </Nav.Link>
+                <a
+                  target="_blank"
+                  href="http://setopia.semyung.ac.kr/program/board/boardList.jsp?menuID=001001001001&boardTypeID=2"
+                  className="px-2 mt-2"
+                >
+                  공지사항
+                </a>
                 <Nav.Link className="px-2" href="#action2">
                   건의사항
                 </Nav.Link>
-                <Nav.Link className="px-2" href="#action2">
+                <a
+                  target="_blank"
+                  href="http://www.semyung.ac.kr/scs.do"
+                  className="px-2 mt-2"
+                >
                   학부 이모저모
-                </Nav.Link>
+                </a>
 
                 <NavDropdown
                   title="게시판"
@@ -191,14 +197,14 @@ function BoardViews(props, { history }) {
             <div className="card-row flip-box">
               {
                 <div className="flip">
-                  <div className="front">
+                  <div className="front1">
                     <div className="card-font">
                       학번,나이,성별에 상관없이
                       <br />
                       자유롭게 소통하고 싶다면?
                     </div>
                   </div>
-                  <div className="back">
+                  <div className="back1">
                     <div className="card-font">
                       자유게시판
                       <br />
@@ -211,14 +217,14 @@ function BoardViews(props, { history }) {
             <div className="card-row flip-box">
               {
                 <div className="flip">
-                  <div className="front">
+                  <div className="front2">
                     <div className="card-font">
                       팀 프로젝트 하면서 코딩실력을 쌓고 싶은데
                       <br />
                       인원이 부족하다구요?
                     </div>
                   </div>
-                  <div className="back">
+                  <div className="back2">
                     <div className="card-font">
                       구인게시판
                       <br />
@@ -231,14 +237,14 @@ function BoardViews(props, { history }) {
             <div className="card-row flip-box">
               {
                 <div className="flip">
-                  <div className="front">
+                  <div className="front3">
                     <div className="card-font">
                       내가 만든 개인/팀 프로젝트를
                       <br />
                       학부생 친구들에게 공유하고싶다면?
                     </div>
                   </div>
-                  <div className="back">
+                  <div className="back3">
                     <div className="card-font">
                       자랑게시판
                       <br />

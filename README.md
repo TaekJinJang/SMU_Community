@@ -4,9 +4,6 @@
 
 # 대학교 컴퓨터학부 커뮤니티
 
-> > > > > > > 2ddd568c509f7fb655c613561312d356c2b5a471
-> > > > > > > <br/>
-
 <p align="center">
   <img width="100" alt="7" src="http://www.semyung.ac.kr/images/kor/sub01/bs01_sem_00.jpg">
 </p>
