@@ -1,13 +1,19 @@
+<<<<<<< HEAD
+
 # Everytime board clone
 
-<br/> 
+# 대학교 컴퓨터학부 커뮤니티
+
+> > > > > > > 2ddd568c509f7fb655c613561312d356c2b5a471
+> > > > > > > <br/>
+
 <p align="center">
-  <img width="100" alt="7" src="https://user-images.githubusercontent.com/71836751/107924570-83bf1080-6fb6-11eb-927b-9b13b0c2423c.png">
+  <img width="100" alt="7" src="http://www.semyung.ac.kr/images/kor/sub01/bs01_sem_00.jpg">
 </p>
  
 ## Description
 
-학교 커뮤니티 서비스인 에브리타임 게시판 클론 프로젝트입니다. 3개월 간 스터디한 내용을 바탕으로 MongoDB, Express.js, React.js, Node.js 스택을 활용해 CRUD 기능을 구현하고 개발역량과 팀 협업 능력을 키우는 것을 목표로 했습니다.
+학교 커뮤니티 서비스인 에브리타임을 기반으로 제작한 프로젝트입니다. 3개월 간 스터디한 내용을 바탕으로 MongoDB, Express.js, React.js, Node.js 스택을 활용해 CRUD 기능을 구현하고 개발역량과 팀 협업 능력을 키우는 것을 목표로 했습니다.
 
 ## Contributors
 
@@ -94,6 +100,7 @@
   - Styled-components
   - Axios
   - @material-ui/lab
+  - @Bootstrap
 
 - Backend
   - Mongoose
