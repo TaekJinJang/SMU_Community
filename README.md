@@ -1,7 +1,7 @@
 # 대학교 컴퓨터학부 커뮤니티
 <br/> 
 <p align="center">
-  <img width="100" alt="7" src="![logo](https://user-images.githubusercontent.com/93184838/168743212-81d9082c-f315-478a-aa3b-bafcfe64b8f7.png)">
+  <img width="100" alt="7" src="http://www.semyung.ac.kr/images/kor/sub01/bs01_sem_00.jpg)">
 </p>
  
 ## Description
