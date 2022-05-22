@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Everytime board clone
 
 # 대학교 컴퓨터학부 커뮤니티
