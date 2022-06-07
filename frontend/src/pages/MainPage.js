@@ -79,6 +79,7 @@ function BoardViews(props, { history }) {
               >
                 <a
                   target="_blank"
+                  rel="noreferrer noopener"
                   href="http://setopia.semyung.ac.kr/program/board/boardList.jsp?menuID=001001001001&boardTypeID=2"
                   className="px-2 mt-2"
                 >
@@ -89,6 +90,7 @@ function BoardViews(props, { history }) {
                 </Nav.Link>
                 <a
                   target="_blank"
+                  rel="noreferrer noopener"
                   href="http://www.semyung.ac.kr/scs.do"
                   className="px-2 mt-2"
                 >
@@ -204,7 +206,12 @@ function BoardViews(props, { history }) {
                       자유롭게 소통하고 싶다면?
                     </div>
                   </div>
-                  <div className="back1">
+                  <div
+                    className="back1"
+                    onClick={() => {
+                      props.history.push("/board");
+                    }}
+                  >
                     <div className="card-font">
                       자유게시판
                       <br />
@@ -224,7 +231,12 @@ function BoardViews(props, { history }) {
                       인원이 부족하다구요?
                     </div>
                   </div>
-                  <div className="back2">
+                  <div
+                    className="back2"
+                    onClick={() => {
+                      props.history.push("/meetingBoard");
+                    }}
+                  >
                     <div className="card-font">
                       구인게시판
                       <br />
@@ -244,7 +256,12 @@ function BoardViews(props, { history }) {
                       학부생 친구들에게 공유하고싶다면?
                     </div>
                   </div>
-                  <div className="back3">
+                  <div
+                    className="back3"
+                    onClick={() => {
+                      props.history.push("/projectBoard");
+                    }}
+                  >
                     <div className="card-font">
                       자랑게시판
                       <br />

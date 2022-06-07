@@ -153,6 +153,7 @@ function BoardDetail(props) {
             </React.Fragment>
           );
         })}
+
       {/* <Link to="/freeboard"> */}
       <BackButton>
         <MenuIcon src={menu} alt="menu" />
