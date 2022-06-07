@@ -140,7 +140,7 @@ function BoardView({ history, match }) {
   };
   return (
     <Container>
-      <Header title="자랑?프로젝트? 고민중 게시판" link="/board-" />
+      <Header title="자랑게시판" link="/board-" />
       <StyledBox backColor="#fafafa" padding="10px 0px" lineHeight="auto">
         <Profilebox>
           <UserProfile boardPage={true} />

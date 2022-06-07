@@ -98,7 +98,7 @@ function BoardDetail(props) {
 
   return (
     <div className="container">
-      <Header title="익명게시판" link="/anonymous" />
+      <Header title="게시판" link="/anonymous" />
       {BoardDetail &&
         BoardDetail.map((board, index) => {
           return (

@@ -106,7 +106,7 @@ function BoardDetail(props) {
 
   return (
     <div className="container">
-      <Header title="익명게시판" link="/board-" />
+      <Header title="세명대학교" link="/board-" />
       {BoardDetail &&
         BoardDetail.map((board, index) => {
           return (
@@ -153,12 +153,18 @@ function BoardDetail(props) {
             </React.Fragment>
           );
         })}
-      <Link to="/freeboard">
-        <BackButton>
-          <MenuIcon src={menu} alt="menu" />
-          <BackTitle>글 목록</BackTitle>
-        </BackButton>
-      </Link>
+      {/* <Link to="/freeboard"> */}
+      <BackButton>
+        <MenuIcon src={menu} alt="menu" />
+        <BackTitle
+          onClick={() => {
+            props.history.goBack();
+          }}
+        >
+          글 목록
+        </BackTitle>
+      </BackButton>
+      {/* </Link> */}
     </div>
   );
 }
