@@ -11,8 +11,11 @@ import UserProfile from "./Section/UserProfile";
 import LogoutButton from "../Common/LogoutButton";
 import Header from "../Common/Header";
 import Footer from "../Common/Footer";
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import Pagination from "@material-ui/lab/Pagination";
+import SpeechRecognition, {
+  useSpeechRecognition,
+} from "react-speech-recognition";
 
 const Profilebox = styled.div`
   width: 100%;
@@ -54,6 +57,7 @@ function BoardView({ history, match }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [WriterIcon, setWriterIcon] = useState(true);
   const [BoardWriter, setBoardWriter] = useState("익명");
+
   const [Content, setContent] = useState([]);
   const [inputs, setInput] = useState({
     boardTitle: "",
@@ -137,6 +141,18 @@ function BoardView({ history, match }) {
     const currentPage = parseInt(e.target.textContent);
     setCurrentPage(currentPage);
   };
+
+  const {
+    transcript,
+    listening,
+    resetTranscript,
+    browserSupportsSpeechRecognition,
+  } = useSpeechRecognition();
+
+  if (!browserSupportsSpeechRecognition) {
+    return <span>Browser doesn't support speech recognition.</span>;
+  }
+
   return (
     <Container>
       <Header title="자유게시판" link="/board-" />
@@ -153,16 +169,22 @@ function BoardView({ history, match }) {
         <BoardForm onSubmit={onSubmit}>
           <BoardInput
             name="boardTitle"
-            placeholder="제목을 작성해주세요."
+            placeholder="제목"
             value={boardTitle}
             onChange={onChange}
           />
           <BoardTextarea
             name="boardContent"
-            placeholder="여기를 눌러서 글을 작성할 수 있습니다."
+            placeholder={transcript}
             value={boardContent}
             onChange={onChange}
           />
+
+          <span>제목 음성인식</span>
+          <Button onClick={SpeechRecognition.startListening}>Start</Button>
+          <Button onClick={SpeechRecognition.stopListening}>Stop</Button>
+          <Button onClick={resetTranscript}>Reset</Button>
+
           <CheckNickname
             icon={WriterIcon}
             click={onIconClick}
