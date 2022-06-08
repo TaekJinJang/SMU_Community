@@ -18,14 +18,14 @@ const CommentForm = styled.form`
 const BackButton = styled.div`
   display: flex;
   justify-content: center;
-  border: 1px solid #c62917;
+  border: 1px solid #657ff0;
   border-radius: 4px;
   width: 24%;
   height: 36px;
   margin: 12px 0px;
 `;
 const BackTitle = styled.span`
-  color: #c62917;
+  color: #657ff0;
   font-size: 13px;
   line-height: 36px;
   text-align: center;

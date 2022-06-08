@@ -13,7 +13,7 @@ const CheckButton = styled.li`
   left: ${(props) => props.left || "10px"};
 `;
 const SubmitButton = styled.li`
-  background-color: #c62917;
+  background-color: #657ff0;
   position: absolute;
   bottom: 0px;
   right: 0px;

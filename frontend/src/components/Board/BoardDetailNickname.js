@@ -26,7 +26,7 @@ const BackButton = styled.div`
   margin: 12px 0px;
 `;
 const BackTitle = styled.span`
-  color: #c62917;
+  color: #657ff0;
   font-size: 13px;
   line-height: 36px;
   text-align: center;
