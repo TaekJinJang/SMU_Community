@@ -211,7 +211,7 @@ function BoardViews(props, { history }) {
                   <div
                     className="back1"
                     onClick={() => {
-                      props.history.push("/board");
+                      props.history.push("/informationSHareBoard");
                     }}
                   >
                     <div className="card-font">
