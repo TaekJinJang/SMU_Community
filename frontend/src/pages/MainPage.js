@@ -102,7 +102,9 @@ function BoardViews(props, { history }) {
                   id="navbarScrollingDropdown"
                   className="px-2"
                 >
-                  <NavDropdown.Item href="/board">자유게시판</NavDropdown.Item>
+                  <NavDropdown.Item href="/informationSHareBoard">
+                    정보공유게시판
+                  </NavDropdown.Item>
                   <NavDropdown.Item href="/meetingBoard">
                     구인게시판
                   </NavDropdown.Item>
@@ -110,7 +112,7 @@ function BoardViews(props, { history }) {
                     자랑게시판
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/">...</NavDropdown.Item>
+                  <NavDropdown.Item href="/board">자유게시판</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
               <Form className="d-flex">
@@ -201,9 +203,9 @@ function BoardViews(props, { history }) {
                 <div className="flip">
                   <div className="front1">
                     <div className="card-font">
-                      학번,나이,성별에 상관없이
+                      선･후배간 소통으로
                       <br />
-                      자유롭게 소통하고 싶다면?
+                      다양한 정보를 얻고싶다면?
                     </div>
                   </div>
                   <div
@@ -213,7 +215,7 @@ function BoardViews(props, { history }) {
                     }}
                   >
                     <div className="card-font">
-                      자유게시판
+                      정보 공유
                       <br />
                       바로가기
                     </div>

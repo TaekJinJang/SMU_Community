@@ -119,7 +119,7 @@ function BoardView({ history, match }) {
       boardTitle: boardTitle,
       boardContent: boardContent,
       boardWriter: BoardWriter,
-      boardSort: "2",
+      boardSort: "3",
     };
     axios.post("/board/upload", variables).then((response) => {
       if (response.status === 200) {
@@ -169,7 +169,7 @@ function BoardView({ history, match }) {
         {Content &&
           Content.map((board, index) => {
             return (
-              board.boardSort == "2" && (
+              board.boardSort == "3" && (
                 <React.Fragment key={index}>
                   <AddBoard
                     id={board._id}

@@ -77,6 +77,25 @@ router.post("/getBoard/3", (req, res) => {
     }
   });
 });
+router.post("/getBoard/4", (req, res) => {
+  // 정보공유게시판 페이지네이션
+  const Page = req.body.page;
+  Board.countDocuments({ boardSort: 4 }, (err, count) => {
+    if (err) {
+      return res.status(400).send(err);
+    } else {
+      Board.find()
+        .sort({ createdAt: -1 })
+        .skip((Page - 1) * 5)
+        .limit(5)
+        .populate("userFrom")
+        .exec((err, boards) => {
+          if (err) return res.status(400).send(err);
+          res.status(200).json({ success: true, boards, count });
+        });
+    }
+  });
+});
 
 router.post("/deleteBoard", (req, res) => {
   Board.findOneAndDelete({
