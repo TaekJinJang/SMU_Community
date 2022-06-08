@@ -176,7 +176,9 @@ function BoardView({ history, match }) {
           />
           <BoardTextarea
             name="boardContent"
-            placeholder={transcript}
+            placeholder={
+              VoiceButton === true ? "내용을 입력하세요" : transcript
+            }
             value={boardContent}
             onChange={onChange}
           />
