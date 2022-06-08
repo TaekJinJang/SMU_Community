@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Textarea = styled.textarea`
   width: 100%;
@@ -13,20 +13,19 @@ const Textarea = styled.textarea`
   overflow-wrap: break-word;
   vertical-align: middle;
   flex-direction: column;
-`
+`;
 
-const BoardTextarea = function({name, placeholder, value, onChange }) {
+const BoardTextarea = function ({ name, placeholder, value, onChange }) {
   return (
     <>
       <Textarea
-          name={name}
-          placeholder={placeholder}
-          value={value}
-          onChange={onChange}
-      >
-      </Textarea>
+        name={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+      ></Textarea>
     </>
-  )   
-}
+  );
+};
 
 export default BoardTextarea;

@@ -57,6 +57,7 @@ function BoardView({ history, match }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [WriterIcon, setWriterIcon] = useState(true);
   const [BoardWriter, setBoardWriter] = useState("익명");
+  const [VoiceButton, setVoiceButton] = useState(true);
 
   const [Content, setContent] = useState([]);
   const [inputs, setInput] = useState({
@@ -180,17 +181,36 @@ function BoardView({ history, match }) {
             onChange={onChange}
           />
 
-          <span>제목 음성인식</span>
-          <Button onClick={SpeechRecognition.startListening}>Start</Button>
-          <Button onClick={SpeechRecognition.stopListening}>Stop</Button>
-          <Button onClick={resetTranscript}>Reset</Button>
-
           <CheckNickname
             icon={WriterIcon}
             click={onIconClick}
             submit={onSubmit}
-          />
+          >
+            {VoiceButton === true ? (
+              <Button
+                onClick={() => {
+                  SpeechRecognition.startListening();
+                  setVoiceButton(!VoiceButton);
+                }}
+              >
+                음성인식
+              </Button>
+            ) : (
+              <Button
+                onClick={() => {
+                  SpeechRecognition.stopListening();
+                  setVoiceButton(!VoiceButton);
+                }}
+              >
+                Stop
+              </Button>
+            )}
+          </CheckNickname>
         </BoardForm>
+        {/* <span>제목 음성인식</span>
+          <Button onClick={SpeechRecognition.startListening}>Start</Button>
+          <Button onClick={SpeechRecognition.stopListening}>Stop</Button>
+          <Button onClick={resetTranscript}>Reset</Button> */}
         {Content &&
           Content.map((board, index) => {
             return (
