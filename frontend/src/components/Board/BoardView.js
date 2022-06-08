@@ -13,6 +13,8 @@ import Header from "../Common/Header";
 import Footer from "../Common/Footer";
 import { Container, Button } from "react-bootstrap";
 import Pagination from "@material-ui/lab/Pagination";
+import { filtering } from "../Skill/filtering";
+
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
@@ -108,6 +110,14 @@ function BoardView({ history, match }) {
 
   const onSubmit = (e) => {
     e.preventDefault();
+
+    // 욕설필터링
+    const FilterWord = filtering.map((text) => {
+      if (boardContent.includes(text)) {
+        return alert(text + " 은(는) 입력할 수 없는 단어입니다");
+      }
+    });
+
     if (!boardTitle) {
       alert(`제목을 작성해주세요`);
       return;
@@ -117,7 +127,10 @@ function BoardView({ history, match }) {
     } else if (boardContent.length > 300) {
       alert(`내용을 300자 이내로 작성해주세요`);
       return;
+    } else if (FilterWord) {
+      return;
     }
+
     let variables = {
       userFrom: userFrom,
       boardTitle: boardTitle,
@@ -151,7 +164,7 @@ function BoardView({ history, match }) {
   } = useSpeechRecognition();
 
   if (!browserSupportsSpeechRecognition) {
-    return <span>Browser doesn't support speech recognition.</span>;
+    return <alert>마이크를 찾을 수 없습니다.</alert>;
   }
 
   return (
