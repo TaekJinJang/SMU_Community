@@ -6,7 +6,7 @@
   <img width="100" alt="7" src="http://www.semyung.ac.kr/images/kor/sub01/bs01_sem_00.jpg">
 </p>
  
-## Description
+## Description 
 
 학교 커뮤니티 서비스인 에브리타임을 기반으로 제작한 프로젝트입니다. 3개월 간 스터디한 내용을 바탕으로 MongoDB, Express.js, React.js, Node.js 스택을 활용해 CRUD 기능을 구현하고 개발역량과 팀 협업 능력을 키우는 것을 목표로 했습니다.
 
