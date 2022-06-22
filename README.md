@@ -71,19 +71,13 @@
 
 #### 로그인 & 회원가입
 
-<p align="center">
-  <img width="280" alt="7" src="https://user-images.githubusercontent.com/71811780/108114998-e01c5000-70dc-11eb-97d2-de160f368d5a.gif">
-  &nbsp;&nbsp;&nbsp;
-  <img width="280" alt="7" src="https://user-images.githubusercontent.com/71811780/108112315-44d5ab80-70d9-11eb-8595-eda8af5d9d76.gif">
-</p>
+![image](https://user-images.githubusercontent.com/93184838/174944872-8970c795-8641-4a53-a1cc-ed55398a9835.png)
+![image](https://user-images.githubusercontent.com/93184838/174944989-cab04770-de2c-4177-b04d-67a66e76c288.png)
 
-#### 게시판 & 마이페이지.
 
-<p align="center">
-  <img width="280" alt="7" src="https://user-images.githubusercontent.com/71811780/108112312-43a47e80-70d9-11eb-8b93-b34216d96f22.gif">
-  &nbsp;&nbsp;&nbsp;
-  <img width="280" alt="7" src="https://user-images.githubusercontent.com/71811780/108112317-4606d880-70d9-11eb-939f-64ee09f484da.gif">
-</p>
+#### 마이페이지.
+
+![image](https://user-images.githubusercontent.com/93184838/174944957-fa45f6b6-cc64-40af-8f76-55f91302a2cc.png)
 
 ## Requirements
 
