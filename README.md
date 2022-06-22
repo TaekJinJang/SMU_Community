@@ -33,11 +33,34 @@
 
 #### 게시판
 
-1. user profile에 설정한 닉네임과 학교 표시
+** 차별점을 두기 위해 총 4개의 게시판으로 나뉨**
+
+## Preview
+![image](https://user-images.githubusercontent.com/93184838/174944445-8fa8f870-3ca9-4208-a2aa-682ec7537800.png)
+
+- 자유 게시판
+- 정보공유 게시판
+- 자랑 게시판
+- 구인 게시판
+- 
+## Preview
+![image](https://user-images.githubusercontent.com/93184838/174944610-6574d1f9-ea7e-40c6-984a-3d96dd570c24.png)
+![image](https://user-images.githubusercontent.com/93184838/174944692-10725d2c-770a-4655-a97a-e7c2f51083b4.png)
+![image](https://user-images.githubusercontent.com/93184838/174944701-9c7fdac5-f4e9-4a77-9163-6a3ae262f74d.png)
+
+![image](https://user-images.githubusercontent.com/93184838/174944615-e46b9bfe-79d5-454c-b680-7085c8df1bd0.png)
+
+
+1. user profile에 설정한 닉네임 표시
 2. 게시판 글 작성 기능(300자 이내)
 3. 게시판 글 작성 시 익명 기능 및 작성시간 추가
 4. 등록된 게시글 좋아요 및 댓글 기능 추가
 5. 게시판 페이지네이션 기능 추가
+6. (추가) 음성인식을 통한 글 작성
+7. (추가) 욕설 필터링 구현
+
+
+
 
 #### 마이페이지
 
@@ -45,10 +68,6 @@
 2. 내가 쓴 게시글 및 좋아요 한 글, 작성한 댓글 모아보기 설정
 3. 내가 쓴 게시글 및 댓글 삭제 기능 추가
 4. 회원탈퇴 기능 추가
-
-## Preview
-
-## Preview
 
 #### 로그인 & 회원가입
 
