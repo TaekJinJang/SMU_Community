@@ -3,7 +3,7 @@
 # 대학교 컴퓨터학부 커뮤니티 
  
 <p align="center">
-  <img width="100" alt="7" src="http://www.semyung.ac.kr/images/kor/sub01/bs01_sem_00.jpg">
+  <img width="100" height="300" src="http://www.semyung.ac.kr/images/kor/sub01/bs01_sem_00.jpg">
 </p>
  
 ## Description  
