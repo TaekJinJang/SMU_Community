@@ -3,17 +3,13 @@
 # 대학교 컴퓨터학부 커뮤니티 
  
 <p align="center">
-  ![image](http://www.semyung.ac.kr/images/kor/sub01/bs01_sem_00.jpg)
+ <img src="https://user-images.githubusercontent.com/93184838/181136182-12f2580d-d4e9-4f12-857a-b8fcea97ad96.png">
 </p>
-![image](http://www.semyung.ac.kr/images/kor/sub01/bs01_sem_00.jpg)
+
  
 ## Description  
 
 학교 커뮤니티 서비스인 에브리타임을 기반으로 제작한 프로젝트입니다. 3개월 간 스터디한 내용을 바탕으로 MongoDB, Express.js, React.js, Node.js 스택을 활용해 CRUD 기능을 구현하고 개발역량과 팀 협업 능력을 키우는 것을 목표로 했습니다.
-
-## Contributors
-- /// 
-- ///
 
 ## Features
  
@@ -42,7 +38,7 @@
 - 정보공유 게시판
 - 자랑 게시판
 - 구인 게시판
-- 
+
 ## Preview
 
 
