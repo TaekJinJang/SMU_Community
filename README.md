@@ -3,8 +3,9 @@
 # 대학교 컴퓨터학부 커뮤니티 
  
 <p align="center">
-  <img width="100" height="300" src="http://www.semyung.ac.kr/images/kor/sub01/bs01_sem_00.jpg">
+  ![image](https://user-images.githubusercontent.com/93184838/174944615-e46b9bfe-79d5-454c-b680-7085c8df1bd0.png)
 </p>
+
  
 ## Description  
 
