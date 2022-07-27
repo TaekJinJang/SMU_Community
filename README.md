@@ -3,7 +3,7 @@
 # 대학교 컴퓨터학부 커뮤니티 
  
 <p align="center">
-  <img width="100" alt="7" src="http://www.semyung.ac.kr/images/kor/sub01/bs01_sem_00.jpg">
+  <img width="100" alt="7" src="C:\Users\xorwl\Desktop\프론트앤드\React\everytime\frontend\src\assets\logo.png">
 </p>
  
 ## Description  
@@ -11,7 +11,6 @@
 학교 커뮤니티 서비스인 에브리타임을 기반으로 제작한 프로젝트입니다. 3개월 간 스터디한 내용을 바탕으로 MongoDB, Express.js, React.js, Node.js 스택을 활용해 CRUD 기능을 구현하고 개발역량과 팀 협업 능력을 키우는 것을 목표로 했습니다.
 
 ## Contributors
-.
 - /// 
 - ///
 
@@ -33,7 +32,7 @@
 
 #### 게시판
 
-** 차별점을 두기 위해 총 4개의 게시판으로 나뉨**
+* 차별점을 두기 위해 총 4개의 게시판으로 나뉨 
 
 ## Preview
 ![image](https://user-images.githubusercontent.com/93184838/174944445-8fa8f870-3ca9-4208-a2aa-682ec7537800.png)
@@ -44,9 +43,7 @@
 - 구인 게시판
 - 
 ## Preview
-![image](https://user-images.githubusercontent.com/93184838/174944610-6574d1f9-ea7e-40c6-984a-3d96dd570c24.png)
-![image](https://user-images.githubusercontent.com/93184838/174944692-10725d2c-770a-4655-a97a-e7c2f51083b4.png)
-![image](https://user-images.githubusercontent.com/93184838/174944701-9c7fdac5-f4e9-4a77-9163-6a3ae262f74d.png)
+
 
 ![image](https://user-images.githubusercontent.com/93184838/174944615-e46b9bfe-79d5-454c-b680-7085c8df1bd0.png)
 
@@ -56,13 +53,14 @@
 3. 게시판 글 작성 시 익명 기능 및 작성시간 추가
 4. 등록된 게시글 좋아요 및 댓글 기능 추가
 5. 게시판 페이지네이션 기능 추가
-6. (추가) 음성인식을 통한 글 작성
-7. (추가) 욕설 필터링 구현
+
 
 
 
 
 #### 마이페이지
+
+![image](https://user-images.githubusercontent.com/93184838/174944957-fa45f6b6-cc64-40af-8f76-55f91302a2cc.png)
 
 1. 계정 정보 변경 기능 및 메뉴 추가(nickname, email, pass word)
 2. 내가 쓴 게시글 및 좋아요 한 글, 작성한 댓글 모아보기 설정
@@ -73,11 +71,6 @@
 
 ![image](https://user-images.githubusercontent.com/93184838/174944872-8970c795-8641-4a53-a1cc-ed55398a9835.png)
 ![image](https://user-images.githubusercontent.com/93184838/174944989-cab04770-de2c-4177-b04d-67a66e76c288.png)
-
-
-#### 마이페이지.
-
-![image](https://user-images.githubusercontent.com/93184838/174944957-fa45f6b6-cc64-40af-8f76-55f91302a2cc.png)
 
 ## Requirements
 
@@ -116,3 +109,16 @@
   - JWT
   
   -------------------------------------------------- 수정 사항 ---------------------------------------------------
+
+## (추가) 음성인식을 통한 글 작성
+
+1. (추가) 음성인식을 통한 글 작성
+![image](https://user-images.githubusercontent.com/93184838/174944610-6574d1f9-ea7e-40c6-984a-3d96dd570c24.png)
+![image](https://user-images.githubusercontent.com/93184838/174944692-10725d2c-770a-4655-a97a-e7c2f51083b4.png)
+- JS 라이브러리를 사용하여 음성인식을 통한 게시글 작성 가능
+
+2. (추가) 욕설 필터링 구현
+![image](https://user-images.githubusercontent.com/93184838/174944701-9c7fdac5-f4e9-4a77-9163-6a3ae262f74d.png)
+- 알고리즘을 구현하여 게시글 내에 욕설을 자동으로 필터링하는 기능
+
+3. (예정) 타입스크립트로 재구성      22.09.03
