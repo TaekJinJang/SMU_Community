@@ -3,7 +3,7 @@
 # 대학교 컴퓨터학부 커뮤니티 
  
 <p align="center">
-  <img width="100" alt="7" src="C:\Users\xorwl\Desktop\프론트앤드\React\everytime\frontend\src\assets\logo.png">
+  <img width="100" alt="7" src="http://www.semyung.ac.kr/images/kor/sub01/bs01_sem_00.jpg">
 </p>
  
 ## Description  
